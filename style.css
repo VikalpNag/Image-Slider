@@ -1,0 +1,50 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.slide {
+  display: none;
+  animation: fade 1s ease-in-out;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.slide img {
+  height: 80vh;
+  width: 80vw;
+  border-radius: 50px;
+  margin: auto;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 50px;
+  font-size: large;
+  font-weight: bolder;
+  background-color: rgb(183, 182, 182);
+  border-radius: 50px;
+  color: whitesmoke;
+  &:hover {
+    background-color: grey;
+    cursor: pointer;
+  }
+}
